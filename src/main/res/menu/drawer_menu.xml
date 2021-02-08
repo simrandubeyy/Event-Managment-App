@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/events"
+            android:icon="@drawable/events"
+            android:title="@string/event_s_near_you"/>
+
+        <item android:id="@+id/register"
+            android:icon="@drawable/registerr"
+            android:title="@string/register_your_event"/>
+
+        <item android:id="@+id/category"
+            android:icon="@drawable/category"
+            android:title="@string/event_s_by_category"/>
+
+        <item android:id="@+id/Profile"
+            android:icon="@drawable/profile"
+            android:title="@string/your_profile"/>
+
+       <item android:title="@string/communicate">
+           <menu>
+
+               <item android:id="@+id/share"
+                   android:icon="@drawable/share"
+                   android:title="@string/share"/>
+
+               <item android:id="@+id/message"
+                   android:icon="@drawable/message"
+                   android:title="@string/send_us_message"/>
+
+               <item android:id="@+id/report"
+                   android:icon="@drawable/report"
+                   android:title="@string/report_bug"/>
+
+               <item android:id="@+id/about"
+                   android:icon="@drawable/about"
+                   android:title="@string/about_us"/>
+
+           </menu>
+
+       </item>
+    </group>
+</menu>

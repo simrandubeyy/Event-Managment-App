@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About"
+    tools:openDrawer="start">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e8e0f8">
+
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="88dp"
+                android:layout_height="82dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/about"
+                tools:ignore="VectorDrawableCompat"
+                android:contentDescription="@string/imageabout" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="198dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="48dp"
+                android:gravity="center_horizontal"
+                android:text="@string/about_us"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.273"
+                app:layout_constraintStart_toEndOf="@+id/imageView11"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="323dp"
+                android:layout_height="1341dp"
+                android:layout_marginTop="156dp"
+                android:gravity="center_horizontal"
+                android:text="@string/eventer_was_founded_by_people_who_spent_decades_managing_events_and_built_the_solution_that_they_could_not_find_elsewhere_as_the_company_evolved_over_the_years_we_achieved_our_goal_of_providing_a_truly_end_to_end_event_solution_from_registration_to_attendee_tracking_to_detailed_reporting_completing_our_mission_to_provide_meeting_and_event_planners_with_what_they_need_when_they_need_it_with_responsive_teams_proven_tools_and_a_transformative_approach_to_create_shape_and_execute_a_first_class_event_and_attendee_experience_there_is_no_other_event_technology_company_in_the_market_that_has_the_commitment_to_help_clients_connect_better_while_also_improving_their_business_objectives"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_hader"
+        app:menu="@menu/drawer_menu" />
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

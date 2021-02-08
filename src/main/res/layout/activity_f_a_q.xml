@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FAQ"
+    tools:openDrawer="start">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+     <androidx.constraintlayout.widget.ConstraintLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="#e8e0f8">
+
+
+         <TextView
+             android:id="@+id/textView4"
+             android:layout_width="371dp"
+             android:layout_height="48dp"
+             android:layout_marginTop="24dp"
+             android:gravity="center"
+             android:text="@string/faq"
+             android:textAlignment="center"
+             android:textColor="#000000"
+             android:textColorHint="#000000"
+             android:textSize="36sp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.6"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+
+         <TextView
+             android:id="@+id/textView5"
+             android:layout_width="361dp"
+             android:layout_height="43dp"
+             android:layout_marginTop="36dp"
+             android:text="@string/_1_what_is_event_management"
+             android:textColor="#000000"
+             android:textColorHint="#000000"
+             android:textSize="24sp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.54"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+         <TextView
+             android:id="@+id/textView6"
+             android:layout_width="363dp"
+             android:layout_height="328dp"
+             android:layout_marginTop="24dp"
+             android:text="@string/the_short_answer_to_the_question_is_event_management_is_the_process_of_designing_and_producing_events_in_the_india_alone_spending_on_events_last_year_was_42_billion_and_will_grow_to_50_billion_by_2020_there_are_25_000_event_businesses_in_the_uk_employing_over_530_000_people_this_is_an_exciting_industry_in_growth_and_encompasses_sectors_from_exhibitions_to_celebrity_sports_to_charity_and_festivals_to_fashion_there_are_so_many_options_the_question_is_which_one_interests_you_the_most"
+             android:textColor="#000000"
+             android:textColorHint="#000000"
+             android:textSize="20sp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.562"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+         <TextView
+             android:id="@+id/textView7"
+             android:layout_width="369dp"
+             android:layout_height="77dp"
+             android:layout_marginTop="28dp"
+             android:text="@string/_2_how_to_become_an_events_planner"
+             android:textColor="#000000"
+             android:textColorHint="#000000"
+             android:textSize="24sp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.642"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+         <TextView
+             android:id="@+id/textView9"
+             android:layout_width="373dp"
+             android:layout_height="286dp"
+             android:layout_marginTop="36dp"
+             android:text="@string/the_first_steps_towards_establishing_your_career_in_events_will_be_to_gather_as_much_experience_as_possible_identify_the_skills_you_have_train_for_the_role_and_get_certified_at_the_events_academy_we_provide_placements_as_part_of_our_advanced_courses_postgraduate_and_degree_alternative_and_volunteering_opportunities_for_all_our_students_which_allow_them_to_add_real_life_experience_to_the_academic_learning"
+             android:textColor="#000000"
+             android:textColorHint="#000000"
+             android:textSize="20sp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.973"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+
+     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_hader"
+        app:menu="@menu/drawer_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
